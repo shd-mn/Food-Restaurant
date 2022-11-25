@@ -1,0 +1,240 @@
+/* ===================================
+Fonts
+====================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/* ===================================
+colors
+====================================== */
+/* ===================================
+General
+====================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+}
+
+a {
+  color: #fff;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.8rem 5.6rem;
+  background-color: #ff9f0d;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+  padding: 1rem;
+}
+
+.link:hover,
+.link:active {
+  color: #ff9f0d;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+  margin-bottom: 3.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+}
+
+.subheading {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  color: #ff9f0d;
+  margin-bottom: 2rem;
+}
+
+/* ===================================
+Header
+====================================== */
+.header-section {
+  padding: 50px 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: #0d0d0d;
+}
+.header-section .logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.header-section .logo span {
+  color: #ff9f0d;
+}
+
+.header-section::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(0.05);
+  background-image: url("../images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5.6rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  font-weight: 400;
+}
+.nav-menu li .nav-link:link,
+.nav-menu li .nav-link:visited {
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav-menu li .nav-link:active {
+  background-color: #ff9f0d;
+}
+.nav-menu li .nav-link::after {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: none;
+  transition: all 0.3s;
+}
+.nav-menu li .nav-link:hover.nav-link::after,
+.nav-menu li .nav-link:active .nav-link::after {
+  background-color: #ff9f0d;
+}
+
+.header-component {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-component .search-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.header-component .search-area input[type=text] {
+  background-color: transparent;
+  width: 310px;
+  height: 54px;
+  padding: 1.4rem 2.6rem;
+  border-radius: 2.7rem;
+  border: 1px solid #ff9f0d;
+  color: #fff;
+}
+.header-component .search-area input::-moz-placeholder {
+  color: #fff;
+}
+.header-component .search-area input:-ms-input-placeholder {
+  color: #fff;
+}
+.header-component .search-area input::placeholder {
+  color: #fff;
+}
+.header-component .search-area img {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  right: 20px;
+}
+.header-component .shopping-card img svg {
+  color: red;
+}
+
+.header-hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 4.8rem;
+}
+.header-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 40%;
+}
+.header-hero .hero-content h1 {
+  text-align: start;
+}
+.header-hero .hero-content h1 span {
+  color: #ff9f0d;
+}
+.header-hero .hero-content p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: start;
+  margin-bottom: 3.6rem;
+}
+.header-hero .hero-img-box {
+  margin-right: -200px;
+  max-width: 65%;
+  height: auto;
+  right: 100px;
+}
+.header-hero .hero-img-box .hero-img {
+  width: 100%;
+  height: auto;
+}
+.header-hero .social-links {
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
