@@ -44,6 +44,12 @@ a {
   background-color: #ff9f0d;
   border-radius: 3rem;
   font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #999966;
 }
 
 .link:link,
@@ -147,8 +153,8 @@ Header
 .nav-menu li .nav-link::after {
   display: inline-block;
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   position: absolute;
   top: 30px;
@@ -197,44 +203,60 @@ Header
   position: absolute;
   right: 20px;
 }
-.header-component .shopping-card img svg {
-  color: red;
-}
 
-.header-hero {
+.hero-section {
   display: flex;
   align-items: center;
   position: relative;
   gap: 4.8rem;
 }
-.header-hero .hero-content {
+.hero-section .hero-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 40%;
 }
-.header-hero .hero-content h1 {
+.hero-section .hero-content h1 {
   text-align: start;
 }
-.header-hero .hero-content h1 span {
+.hero-section .hero-content h1 span {
   color: #ff9f0d;
 }
-.header-hero .hero-content p {
+.hero-section .hero-content p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-align: start;
   margin-bottom: 3.6rem;
 }
-.header-hero .hero-img-box {
+.hero-section .hero-img-box {
   margin-right: -200px;
   max-width: 65%;
   height: auto;
   right: 100px;
 }
-.header-hero .hero-img-box .hero-img {
+.hero-section .hero-img-box .hero-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.header-hero .social-links {
+.hero-section .social-links {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -7.2rem;
+  font-size: 1.2rem;
+}
+.hero-section .social-links span {
+  width: 1px;
+  height: 158px;
+  background-color: currentColor;
+  margin: 3.6rem 0;
+}
+.hero-section .social-links .link {
+  margin-bottom: 1.6rem;
+}
+.hero-section .social-links .link:last-of-type {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
