@@ -16,8 +16,10 @@
             crossorigin="anonymous"
         ></script>
     </head>
+
     <body>
-        <section class="header-section">
+        <!-- Header -->
+        <header class="header-section">
             <div class="logo"><span>Food</span>tuck</div>
 
             <!-- Nav -->
@@ -28,7 +30,7 @@
                     <li><a href="blog" class="nav-link">Blog</a></li>
                     <li><a href="pages" class="nav-link">Pages</a></li>
                     <li>
-                        <a href="about" class="nav-link">About </a>
+                        <a href="#about-us" class="nav-link">About</a>
                     </li>
                     <li><a href="shop" class="nav-link">Shop</a></li>
                     <li><a href="contact" class="nav-link">Contact</a></li>
@@ -45,8 +47,12 @@
                         <img src="./icons/search.svg" alt="search icon" />
                     </form>
 
-                    <a class="nav-link shopping-card" href="#">
-                        <img class="shopping-img" src="./icons/handbag.svg" alt="shooping card" />
+                    <a class="link shopping-card" href="#">
+                        <img
+                            class="shopping-img"
+                            src="./icons/handbag.svg"
+                            alt="shooping card"
+                        />
                     </a>
                 </div>
             </nav>
@@ -60,7 +66,7 @@
                         <span>Th</span>e Art of speed food Quality
                     </h1>
 
-                    <p>
+                    <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Varius sed pharetra dictum neque massa congue
                     </p>
@@ -87,12 +93,96 @@
                     <span></span>
                 </div>
             </div>
+        </header>
 
+        <!-- About Us -->
+        <section id="about-us" class="about-section container">
+            <div class="about-content">
+                <span class="subheading">About us</span>
 
-            
+                <h2 class="heading-secondary">
+                    <span>We</span> Create the best foody product
+                </h2>
 
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque diam pellentesque bibendum non dui volutpat
+                    fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                    pretium donec id elementum. Ultrices mattis sed vitae mus
+                    risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
+                </p>
 
+                <ul class="about-list">
+                    <li>
+                        <p class="par-list">
+                            <span><img src="./icons/check.svg" alt="" /></span
+                            >Lacus nisi, et ac dapibus sit eu velit in
+                            consequat.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="par-list">
+                            <span><img src="./icons/check.svg" alt="" /></span
+                            >Quisque diam pellentesque bibendum non dui volutpat
+                            fringilla
+                        </p>
+                    </li>
+                    <li>
+                        <p class="par-list">
+                            <span><img src="./icons/check.svg" alt="" /></span
+                            >Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit
+                        </p>
+                    </li>
+                </ul>
 
+                <a class="btn" href="#">Read More</a>
+            </div>
+            <div class="about-img-box">
+                <img
+                    class="about-img"
+                    src="./images/about-img1.jpg"
+                    alt="delicius food"
+                />
+                <img
+                    class="about-img"
+                    src="./images/about-img2.jpg"
+                    alt="delicius food"
+                />
+                <img
+                    class="about-img"
+                    src="./images/about-img3.jpg"
+                    alt="delicius food"
+                />
+            </div>
+        </section>
+
+        <!-- Food-category -->
+        <section class="food-section">
+            <div class="food-category container">
+                <span class="subheading">Food Category</span>
+
+                <h2 class="heading-secondary"><span>Ch</span>oose Food Item</h2>
+
+                <div class="food-img-box">
+                    <a class="food-item" href="#">
+                        <img src="./images/food-img1.jpg" alt="delicius food" />
+                        <span class="food-text-box">
+                            <p>Save 30%</p>
+                            <h6>Fast Food Dish</h6>
+                        </span>
+                    </a>
+                    <a class="food-item" href="#">
+                        <img src="./images/food-img2.jpg" alt="delicius food" />
+                    </a>
+                    <a class="food-item" href="#">
+                        <img src="./images/food-img3.jpg" alt="delicius food" />
+                    </a>
+                    <a class="food-item" href="#">
+                        <img src="./images/food-img4.jpg" alt="delicius food" />
+                    </a>
+                </div>
+            </div>
         </section>
     </body>
 </html>
