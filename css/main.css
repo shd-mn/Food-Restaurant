@@ -224,6 +224,9 @@ Header
   right: 20px;
 }
 
+/* ===================================
+Hero
+====================================== */
 .hero-section {
   display: flex;
   align-items: center;
@@ -231,6 +234,7 @@ Header
   gap: 4.8rem;
 }
 .hero-section .hero-content {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -240,6 +244,7 @@ Header
   text-align: start;
 }
 .hero-section .hero-img-box {
+  width: 50%;
   margin-right: -200px;
   max-width: 65%;
   height: auto;
@@ -321,7 +326,7 @@ About Us
 }
 
 /* ===================================
-About Us
+Food Category
 ====================================== */
 .food-section {
   position: relative;
@@ -392,4 +397,228 @@ About Us
   font-size: 2rem;
   padding: 10px 32px;
   background-color: #ff9f0d;
+}
+
+/* ===================================
+Why-Us Category
+====================================== */
+.why-us-section {
+  display: flex;
+  align-items: center;
+  gap: 9.8rem;
+  margin-bottom: 120px;
+}
+
+.why-us-image-box {
+  width: 50%;
+}
+.why-us-image-box .masonry-box1 {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+.why-us-image-box .masonry-box1 .img1 {
+  flex: 5;
+}
+.why-us-image-box .masonry-box1 .img2 {
+  flex: 4;
+}
+.why-us-image-box .masonry-box2 {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-flow: wrap;
+  position: relative;
+}
+.why-us-image-box .masonry-box2 .img3 {
+  flex: 3;
+}
+.why-us-image-box .masonry-box2 .img4 {
+  flex: 2.5;
+}
+.why-us-image-box .masonry-box2 .img5 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.why-us-image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+}
+
+.why-us-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.why-us-content div {
+  display: flex;
+}
+.why-us-content div figure {
+  margin-right: 32px;
+  margin-bottom: 36px;
+}
+.why-us-content div figure span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #ff9f0d;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+.why-us-content div figure span img {
+  width: 56px;
+  height: 56px;
+}
+.why-us-content div figure figcaption {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.why-us-content .experience {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 18px 54px;
+  border-radius: 6px;
+  border-left: 10px solid #ff9f0d;
+}
+.why-us-content .experience h2 {
+  margin-bottom: 0;
+  margin-right: 48px;
+}
+.why-us-content .experience p {
+  font-size: 2rem;
+  line-height: 28px;
+  color: #000;
+}
+.why-us-content .experience p span {
+  font-size: 2.4rem;
+}
+
+/* ===================================
+client-section
+====================================== */
+.client-section {
+  position: relative;
+  padding: 110px 0;
+  margin-bottom: 120px;
+}
+.client-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(0.05);
+  background-image: url("../images/client-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.client-content {
+  display: flex;
+  justify-content: space-between;
+}
+.client-content .client-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.client-content .client-box figure {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+.client-content .client-box h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.client-content .client-box h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* ===================================
+food-menu-section
+====================================== */
+.food-menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.food-menu-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.food-menu-list li a {
+  font-size: 2rem;
+}
+
+.food-menu-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.food-menu-content figure {
+  width: 33%;
+}
+.food-menu-content figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.food-menu-content .food-list {
+  width: 66%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.food-menu-content .food-list li {
+  display: flex;
+  margin-right: 32px;
+}
+.food-menu-content .food-list figure {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.food-menu-content .food-list figure img {
+  width: 100%;
+  height: 100%;
+}
+.food-menu-content .food-list span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.food-menu-content .food-list span h6 {
+  font-size: 2rem;
+}
+.food-menu-content .food-list span p {
+  font-size: 1.4rem;
+}
+.food-menu-content .food-list span .food-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff9f0d;
 }/*# sourceMappingURL=main.css.map */
