@@ -25,11 +25,9 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#food-menu" class="nav-link">Menu</a></li>
-                <li><a href="blog" class="nav-link">Blog</a></li>
-                <li><a href="pages" class="nav-link">Pages</a></li>
-                <li>
-                    <a href="#about-us" class="nav-link">About</a>
-                </li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#pages" class="nav-link">Pages</a></li>
+                <li><a href="#about-us" class="nav-link">About</a></li>
                 <li><a href="#food-category" class="nav-link">Shop</a></li>
                 <li><a href="contact" class="nav-link">Contact</a></li>
             </ul>
@@ -37,11 +35,13 @@
             <div class="header-component">
                 <form class="search-area">
                     <input type="text" name="search" id="search" placeholder="Search..." />
-                    <img src="./icons/search.svg" alt="search icon" />
+                    <button class="search-btn" id="search-btn" type="submit">
+                        <img src="./icons/search.svg" alt="search icon" />
+                    </button>
                 </form>
 
                 <a class="link shopping-card" href="#">
-                    <img class="shopping-img" src="./icons/handbag.svg" alt="shooping card" />
+                    <img src="./icons/handbag.svg" alt="shooping card" />
                 </a>
             </div>
         </nav>
@@ -231,28 +231,28 @@
                 <figure>
                     <img src="./icons/chef.svg" alt="" />
                 </figure>
-                <h5>Professional Chefs</h5>
+                <h5 class="heading-h5">Professional Chefs</h5>
                 <h3>420</h3>
             </div>
             <div class="client-box">
                 <figure>
                     <img src="./icons/soda_burger.svg" alt="" />
                 </figure>
-                <h5>Items Of Food</h5>
+                <h5 class="heading-h5">Items Of Food</h5>
                 <h3>320</h3>
             </div>
             <div class="client-box">
                 <figure>
                     <img src="./icons/spoon.svg" alt="" />
                 </figure>
-                <h5>Years Of Experienced</h5>
+                <h5 class="heading-h5">Years Of Experienced</h5>
                 <h3>30+</h3>
             </div>
             <div class="client-box">
                 <figure>
                     <img src="./icons/spoon.svg" alt="" />
                 </figure>
-                <h5>Happy Customers</h5>
+                <h5 class="heading-h5">Happy Customers</h5>
                 <h3>220</h3>
             </div>
         </div>
@@ -401,6 +401,7 @@
         <a class="btn btn_outline" href="#">See More</a>
     </section>
 
+    <!-- Testimonials Section-->
     <section class="testimonials-section container">
         <span class="subheading">Testimonials</span>
 
@@ -426,7 +427,7 @@
                 <img src="./icons/stars.svg" alt="stars" />
             </span>
 
-            <h5>Alamin Hasan</h5>
+            <h5 class="heading-h5">Alamin Hasan</h5>
 
             <p class="description">Food Specialist</p>
         </div>
@@ -439,33 +440,239 @@
         </div>
     </section>
 
-    <!-- restaurant active process -->
-    <section class="restaurant-process-section">
+    <!-- Restaurant active process -->
+    <section class="restaurant-process-section" id="pages">
         <div class="process container">
             <div class="process-content">
                 <span class="subheading">Restaurant Active Process</span>
 
                 <h2 class="heading-secondary">
-                    <span>We</span> Document Every Food Bean Process untile it is saved
+                    <span>We</span> Document Every Food Bean Process untile
+                    it is saved
                 </h2>
 
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui
-                    volutpat fringilla
-                    bibendum. Urna, elit augue urna...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque diam pellentesque bibendum non dui volutpat
+                    fringilla bibendum. Urna, elit augue urna...
                 </p>
                 <div class="btn-group">
                     <a class="btn btn_outline" href="#">Read More</a>
                     <a class="btn btn_full" href="#">
-                        <img src="./icons/play.svg" alt=""></span>
+                        <img src="./icons/play.svg" alt="" />
                     </a>
                     <p>Play Video</p>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- Blog -->
+    <section class="blog container" id="blog">
+        <span class="subheading">Blog Post</span>
+
+        <h2 class="heading-secondary"><span>La</span>test News & Blog</h2>
+
+        <div class="blog-content">
+            <div class="blog-card">
+                <figure>
+                    <img src="./images/food-img2.jpg" alt="delicius food" />
+                </figure>
+                <div class="blog-text-box">
+                    <p>10 February 2022</p>
+                    <h5 class="heading-h5">
+                        Pellentesque Non Efficitur Mi Aliquam Convallis Mi
+                        Quis
+                    </h5>
+                    <div class="blog-action">
+                        <a class="link" href="#">Learn More</a>
+                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
+                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
+                        <a class="link" href="#">
+                            <img src="./icons/shareNetwork.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <figure>
+                    <img src="./images/masonry-img1.jpg" alt="delicius food" />
+                </figure>
+                <div class="blog-text-box">
+                    <p>10 February 2022</p>
+                    <h5 class="heading-h5">
+                        Consectetur adipisicing elit rerum, dolorem est et
+                        sit.
+                    </h5>
+                    <div class="blog-action">
+                        <a class="link" href="#">Learn More</a>
+                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
+                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
+                        <a class="link" href="#">
+                            <img src="./icons/shareNetwork.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-card">
+                <figure>
+                    <img src="./images/food-img4.jpg" alt="delicius food" />
+                </figure>
+                <div class="blog-text-box">
+                    <p>10 February 2022</p>
+                    <h5 class="heading-h5">
+                        Lorem ipsum, dolor amet consectetur expedita?
+                    </h5>
+                    <div class="blog-action">
+                        <a class="link" href="#">Learn More</a>
+                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
+                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
+                        <a class="link" href="#">
+                            <img src="./icons/shareNetwork.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-notification">
+            <div class="notification-heading">
+                <h4 class="heading-secondary">
+                    <span>St</span>ill You Need Our Support ?
+                </h4>
+                <p>
+                    Don’t wait make a smart & logical quote here. Its pretty
+                    easy.
+                </p>
+            </div>
+
+            <form>
+                <input type="email" id="email" placeholder="Enter Your Email" />
+                <button type="submit" class="notification-btn">
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer-section">
+        <div class="footer container">
+            <div class="footer-about">
+                <h5 class="heading-h5">About Us.</h5>
+                <p>
+                    Corporate clients and leisure travelers has been relying
+                    on Groundlink for dependab safe, and professional
+                    chauffeured car service in major cities across World.
+                </p>
+                <div class="about-info">
+                    <figure>
+                        <img src="./icons/clockClockwise.svg" alt="" />
+                    </figure>
+                    <div class="about-info-text-box">
+                        <p>Opening Hours</p>
+                        <p>Mon - Sat(8.00 - 6.00)</p>
+                        <p>Sunday - Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="useful-links">
+                <h5 class="heading-h5">Useful Links</h5>
+                <ul>
+                    <li><a class="link" href="#">About</a></li>
+                    <li><a class="link" href="#">News</a></li>
+                    <li><a class="link" href="#">Partners</a></li>
+                    <li><a class="link" href="#">Team</a></li>
+                    <li><a class="link" href="#">Menu</a></li>
+                    <li><a class="link" href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h5 class="heading-h5">Help?</h5>
+                <ul>
+                    <li><a class="link" href="#">FAQ</a></li>
+                    <li><a class="link" href="#">Term & conditions</a></li>
+                    <li><a class="link" href="#">Reporting</a></li>
+                    <li><a class="link" href="#">Documentation</a></li>
+                    <li><a class="link" href="#">Support Policy</a></li>
+                    <li><a class="link" href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="recent-post">
+                <h5 class="heading-h5">Recent Post</h5>
+                <ul>
+                    <li>
+                        <a class="link" href="#">
+                            <figure>
+                                <img src="./images/masonry-img3.jpg" alt="" />
+                            </figure>
+                            <div class="recent-text-box">
+                                <p>20 Feb 2022</p>
+                                <p>Keep Your Business</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            <figure>
+                                <img src="./images/food-menu-img6.jpg" alt="" />
+                            </figure>
+                            <div class="recent-text-box">
+                                <p>20 Feb 2022</p>
+                                <p>Keep Your Business</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">
+                            <figure>
+                                <img src="./images/food-img3.jpg" alt="" />
+                            </figure>
+                            <div class="recent-text-box">
+                                <p>20 Feb 2022</p>
+                                <p>Keep Your Business</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-text-box container">
+                <p>
+                    Copyright © 2022
+                    <a class="link copyright-link" href="https://www.figma.com/community/file/1169920613484168416">figma design by
+                        Ayeman.</a> <a class="link copyright-link" href="https://github.com/shd-mn">Coding by
+                            Shadman.</a>
+                    All Rights Reserved.
+                </p>
+                <ul class="social-link">
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
-</html>
+</html> 

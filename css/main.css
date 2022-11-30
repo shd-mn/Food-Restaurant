@@ -19,7 +19,7 @@ General
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.2rem #ff9f0d;
+  box-shadow: 0 0 0 0.1rem #ff9f0d;
 }
 
 html {
@@ -121,6 +121,12 @@ ul {
   margin-bottom: 2.4rem;
 }
 
+.heading-h5 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
 .description {
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -153,6 +159,7 @@ Header
   width: 100%;
   height: 100%;
   position: absolute;
+  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -230,11 +237,21 @@ Header
 .header-component .search-area input::placeholder {
   color: #fff;
 }
-.header-component .search-area img {
-  width: 2.4rem;
-  height: 2.4rem;
+.header-component .search-area .search-btn {
   position: absolute;
   right: 20px;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+.header-component .search-area .search-btn img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.header-component .search-area .search-btn:hover img {
+  filter: invert(53%) sepia(90%) saturate(456%) hue-rotate(354deg) brightness(106%) contrast(104%);
+}
+.header-component .shopping-card:hover img {
+  filter: invert(53%) sepia(90%) saturate(456%) hue-rotate(354deg) brightness(106%) contrast(104%);
 }
 
 /* ===================================
@@ -555,11 +572,6 @@ client-section
   height: 120px;
   margin-bottom: 24px;
 }
-.client-content .client-box h5 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
 .client-content .client-box h3 {
   font-size: 4rem;
   font-weight: 700;
@@ -743,11 +755,6 @@ Chefs section
 .testimonials-card .stars {
   margin-bottom: 16px;
 }
-.testimonials-card h5 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-}
 .testimonials-card::after {
   content: "";
   width: 400px;
@@ -844,4 +851,273 @@ restaurant active process
   height: 16px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* ===================================
+Blog Section
+====================================== */
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.blog h2 {
+  margin-bottom: 60px;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+.blog-content .blog-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.blog-content .blog-card figure {
+  width: 100%;
+  height: 350px;
+}
+.blog-content .blog-card figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-content .blog-card .blog-text-box {
+  padding: 32px 42px;
+}
+.blog-content .blog-card .blog-text-box p {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+.blog-content .blog-card .blog-text-box h5 {
+  margin-bottom: 32px;
+}
+.blog-content .blog-card .blog-text-box .blog-action {
+  display: flex;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.blog-content .blog-card .blog-text-box .blog-action a:first-of-type {
+  margin-right: auto;
+}
+.blog-content .blog-card .blog-text-box .blog-action a:hover img {
+  filter: invert(53%) sepia(90%) saturate(456%) hue-rotate(354deg) brightness(106%) contrast(104%);
+}
+
+.blog-notification {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #ff9f0d;
+}
+.blog-notification .notification-heading {
+  display: flex;
+  flex-direction: column;
+}
+.blog-notification h4 {
+  font-size: 3.2rem;
+  margin-bottom: 16px;
+}
+.blog-notification p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.blog-notification form {
+  display: flex;
+  align-items: center;
+  width: 460px;
+  height: 56px;
+  position: relative;
+}
+.blog-notification form input[type=email] {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ff9f0d;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.blog-notification form input[type=email]::-moz-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+.blog-notification form input[type=email]:-ms-input-placeholder {
+  color: white;
+  opacity: 0.6;
+}
+.blog-notification form input[type=email]::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+.blog-notification form .notification-btn {
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  line-height: 56px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #ff9f0d;
+}
+.blog-notification form .notification-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===================================
+Footer Section
+====================================== */
+.footer-section {
+  width: 100%;
+  position: relative;
+}
+.footer-section::before {
+  content: "";
+  width: 295px;
+  height: 422px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 90px;
+  background: url(../images/footer-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: opacity(0.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.8rem;
+  padding-bottom: 56px;
+}
+.footer h5 {
+  margin-bottom: 28px;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.footer ul li a:link,
+.footer ul li a:visited {
+  font-size: 2rem;
+  padding-left: 0;
+}
+
+.footer-about {
+  flex: 1.5;
+}
+.footer-about .about-info {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-about .about-info figure {
+  padding: 18px;
+  background-color: #ff9f0d;
+  border-radius: 6px;
+}
+.footer-about .about-info .about-info-text-box > p:first-of-type {
+  font-size: 1.8rem;
+}
+
+.useful-links {
+  flex: 1;
+}
+
+.help {
+  flex: 1;
+}
+
+.recent-post {
+  flex: 1.1;
+}
+.recent-post li {
+  margin-bottom: 16px;
+}
+.recent-post li a:link,
+.recent-post li a:visited {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.recent-post li a:link p,
+.recent-post li a:visited p {
+  font-size: 1.8rem;
+}
+.recent-post li .recent-text-box p:first-of-type {
+  font-size: 1.6rem;
+  color: #4f4f4f;
+}
+.recent-post li figure {
+  width: 56px;
+  height: 56px;
+}
+.recent-post li figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.copyright {
+  background-color: #ff9f0d;
+  font-size: 1.6rem;
+  padding: 32px 0;
+}
+.copyright .copyright-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright .copyright-link:link,
+.copyright .copyright-link:visited {
+  padding: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #fff;
+}
+.copyright .copyright-link:hover,
+.copyright .copyright-link:active {
+  color: white;
+  border-bottom: 1px solid transparent;
+}
+.copyright .social-link {
+  display: flex;
+  gap: 14px;
+}
+.copyright .social-link a:link,
+.copyright .social-link a:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  top: 50%;
+}
+.copyright .social-link a:link i,
+.copyright .social-link a:visited i {
+  color: #4f4f4f;
+}
+.copyright .social-link a:hover i,
+.copyright .social-link a:active i {
+  color: #ff9f0d;
 }/*# sourceMappingURL=main.css.map */
