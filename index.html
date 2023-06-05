@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Restaurant</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Restaurant</title>
+        <!-- Css -->
 
-    <!-- Css -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/media.css" />
 
-    <link rel="stylesheet" href="./css/main.css" />
+        <!-- font-awsome icons -->
+        <script
+            src="https://kit.fontawesome.com/c3c39a2c40.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-    <!-- font-awsome icons -->
-    <script src="https://kit.fontawesome.com/c3c39a2c40.js" crossorigin="anonymous"></script>
-</head>
+    <body style="position: relative">
+        <div class="bg-img">
+            <img class="header-bg" src="./images/hero-bg.jpg" alt="delicius" />
+        </div>
+        <!-- Header -->
+        <header id="header" class="header-section">
+            <div class="logo"><span>Food</span>Tuck</div>
 
-<body>
-    <!-- Header -->
-    <header class="header-section">
-        <div class="logo"><span>Food</span>tuck</div>
+            <!-- Nav -->
+            <nav id="nav" class="header-nav container">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#food-menu" class="nav-link">Menu</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#pages" class="nav-link">Pages</a></li>
+                    <li><a href="#about-us" class="nav-link">About</a></li>
+                    <li>
+                        <a href="#food-category" class="nav-link">Shop</a>
+                    </li>
+                    <li><a href="#footer" class="nav-link">Contact</a></li>
+                </ul>
 
-        <!-- Nav -->
-        <nav class="header-nav container">
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#food-menu" class="nav-link">Menu</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#pages" class="nav-link">Pages</a></li>
-                <li><a href="#about-us" class="nav-link">About</a></li>
-                <li><a href="#food-category" class="nav-link">Shop</a></li>
-                <li><a href="contact" class="nav-link">Contact</a></li>
-            </ul>
+                <div class="header-component">
+                    <form id="search" class="search-area">
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="Search..."
+                        />
+                        <button
+                            class="search-btn"
+                            id="search-btn"
+                            type="submit"
+                        >
+                            <img src="./icons/search.svg" alt="search icon" />
+                        </button>
+                    </form>
 
-            <div class="header-component">
-                <form class="search-area">
-                    <input type="text" name="search" id="search" placeholder="Search..." />
-                    <button class="search-btn" id="search-btn" type="submit">
-                        <img src="./icons/search.svg" alt="search icon" />
-                    </button>
-                </form>
-
-                <a class="link shopping-card" href="#">
-                    <img src="./icons/handbag.svg" alt="shooping card" />
-                </a>
-            </div>
-        </nav>
+                    <a class="link shopping-card" href="#">
+                        <img src="./icons/handbag.svg" alt="shooping card" />
+                    </a>
+                </div>
+            </nav>
+        </header>
 
         <!-- Hero -->
-        <div class="hero-section container">
-            <div class="hero-content">
-                <span class="subheading">Its Quick & Amusing!</span>
-
-                <h1 class="heading-primary">
-                    <span>Th</span>e Art of speed food Quality
-                </h1>
-
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Varius sed pharetra dictum neque massa congue
-                </p>
-                <a class="btn btn_full" href="#">See Menu</a>
-            </div>
-            <div class="hero-img-box">
-                <img class="hero-img" src="./images/hero-img.png"
-                    alt="Fried Rice With Poached Egg, Zucchini, And Celery on Round Green Ceramic Plate" />
-            </div>
+        <section class="hero-section">
             <div class="social-links">
                 <span></span>
                 <a class="link" href="#">
@@ -78,601 +79,780 @@
                 </a>
                 <span></span>
             </div>
-        </div>
-    </header>
+            <div class="hero-content grid col-2">
+                <div class="hero-text-box">
+                    <span class="subheading">Its Quick & Amusing!</span>
+                    <h1 class="heading-primary">
+                        <span>Th</span>e Art of speed food Quality
+                    </h1>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Varius sed pharetra dictum neque massa congue
+                    </p>
+                    <a class="btn btn_full" href="#food-menu">See Menu</a>
+                </div>
+                <div class="hero-img-box">
+                    <img
+                        class="hero-img"
+                        src="./images/hero-img.png"
+                        alt="Fried Rice With Poached Egg, Zucchini, And Celery on Round Green Ceramic Plate"
+                    />
+                </div>
+            </div>
+        </section>
 
-    <!-- About Us -->
-    <section id="about-us" class="about-section container">
-        <div class="about-content">
-            <span class="subheading">About us</span>
+        <main>
+            <!-- About Us -->
+            <section id="about-us" class="about-section container grid">
+                <div class="about-content">
+                    <span class="subheading">About us</span>
 
-            <h2 class="heading-secondary">
-                <span>We</span> Create the best foody product
-            </h2>
+                    <h2 class="heading-secondary">
+                        <span>We</span> Create the best foody product
+                    </h2>
 
-            <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque diam pellentesque bibendum non dui volutpat
-                fringilla bibendum. Urna, elit augue urna, vitae feugiat
-                pretium donec id elementum. Ultrices mattis sed vitae mus
-                risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
-            </p>
-
-            <ul class="about-list">
-                <li>
-                    <p class="par-list">
-                        <span><img src="./icons/check.svg" alt="" /></span>Lacus nisi, et ac dapibus sit eu velit in
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque diam pellentesque bibendum non dui volutpat
+                        fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                        pretium donec id elementum. Ultrices mattis sed vitae
+                        mus risus. Lacus nisi, et ac dapibus sit eu velit in
                         consequat.
                     </p>
-                </li>
-                <li>
-                    <p class="par-list">
-                        <span><img src="./icons/check.svg" alt="" /></span>Quisque diam pellentesque bibendum non dui
-                        volutpat
-                        fringilla
+
+                    <ul class="about-list">
+                        <li>
+                            <p class="par-list">
+                                <span
+                                    ><img
+                                        src="./icons/check.svg"
+                                        alt="" /></span
+                                >Lacus nisi, et ac dapibus sit eu velit in
+                                consequat.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="par-list">
+                                <span
+                                    ><img
+                                        src="./icons/check.svg"
+                                        alt="" /></span
+                                >Quisque diam pellentesque bibendum non dui
+                                volutpat fringilla
+                            </p>
+                        </li>
+                        <li>
+                            <p class="par-list">
+                                <span
+                                    ><img
+                                        src="./icons/check.svg"
+                                        alt="" /></span
+                                >Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit
+                            </p>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn_full" href="#">Read More</a>
+                </div>
+                <div class="about-img-box">
+                    <img
+                        class="about-img"
+                        src="./images/about-img1.jpg"
+                        alt="delicius food"
+                    />
+                    <img
+                        class="about-img"
+                        src="./images/about-img2.jpg"
+                        alt="delicius food"
+                    />
+                    <img
+                        class="about-img"
+                        src="./images/about-img3.jpg"
+                        alt="delicius food"
+                    />
+                </div>
+            </section>
+
+            <!-- Food-category -->
+            <section class="food-section" id="food-category">
+                <div class="food-category container">
+                    <span class="subheading">Food Category</span>
+
+                    <h2 class="heading-secondary">
+                        <span>Ch</span>oose Food Item
+                    </h2>
+
+                    <div class="food-img-box">
+                        <a class="food-item" href="#">
+                            <img
+                                src="./images/food-img1.jpg"
+                                alt="delicius food"
+                            />
+                            <span class="food-text-box">
+                                <p>Save 30%</p>
+                                <h6>Fast Food Dish</h6>
+                            </span>
+                        </a>
+                        <a class="food-item" href="#">
+                            <img
+                                src="./images/food-img2.jpg"
+                                alt="delicius food"
+                            />
+                        </a>
+                        <a class="food-item" href="#">
+                            <img
+                                src="./images/food-img3.jpg"
+                                alt="delicius food"
+                            />
+                        </a>
+                        <a class="food-item" href="#">
+                            <img
+                                src="./images/food-img4.jpg"
+                                alt="delicius food"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why us -->
+            <section class="why-us-section container">
+                <div class="why-us-image-box">
+                    <div class="div1 masonry-box1">
+                        <figure class="img1">
+                            <img
+                                src="./images/masonry-img1.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <figure class="img2">
+                            <img
+                                src="./images/masonry-img2.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                    </div>
+                    <div class="masonry-box2">
+                        <figure class="img3">
+                            <img
+                                src="./images/masonry-img3.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <figure class="img4">
+                            <img
+                                src="./images/masonry-img4.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <figure class="img5">
+                            <img
+                                src="./images/masonry-img5.jpg"
+                                alt="delicius food"
+                            />
+                            <img
+                                src="./images/masonry-img6.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                    </div>
+                </div>
+                <div class="why-us-content">
+                    <span class="subheading">Why Choose us</span>
+
+                    <h2 class="heading-secondary">
+                        <span>Ex</span>tra ordinary taste And Experienced
+                    </h2>
+
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque diam pellentesque bibendum non dui volutpat
+                        fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                        pretium donec id elementum. Ultrices mattis sed vitae
+                        mus risus. Lacus nisi, et ac dapibus sit eu velit in
+                        consequat.
                     </p>
-                </li>
-                <li>
-                    <p class="par-list">
-                        <span><img src="./icons/check.svg" alt="" /></span>Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit
-                    </p>
-                </li>
-            </ul>
 
-            <a class="btn btn_full" href="#">Read More</a>
-        </div>
-        <div class="about-img-box">
-            <img class="about-img" src="./images/about-img1.jpg" alt="delicius food" />
-            <img class="about-img" src="./images/about-img2.jpg" alt="delicius food" />
-            <img class="about-img" src="./images/about-img3.jpg" alt="delicius food" />
-        </div>
-    </section>
+                    <div>
+                        <figure>
+                            <span>
+                                <img src="./icons/hamburger.svg" alt="" />
+                            </span>
+                            <figcaption>Fast Food</figcaption>
+                        </figure>
+                        <figure>
+                            <span><img src="./icons/cookie.svg" alt="" /></span>
+                            <figcaption>Lunch</figcaption>
+                        </figure>
+                        <figure>
+                            <span
+                                ><img src="./icons/hamburger.svg" alt=""
+                            /></span>
+                            <figcaption>Dinner</figcaption>
+                        </figure>
+                    </div>
 
-    <!-- Food-category -->
-    <section class="food-section" id="food-category">
-        <div class="food-category container">
-            <span class="subheading">Food Category</span>
+                    <div class="experience">
+                        <h2 class="heading-secondary"><span>30+</span></h2>
+                        <p>
+                            Years of <br />
+                            <span>Experienced</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-            <h2 class="heading-secondary"><span>Ch</span>oose Food Item</h2>
+            <!-- Client Section -->
+            <section class="client-section">
+                <div class="client-content container">
+                    <div class="client-box">
+                        <figure>
+                            <img src="./icons/chef.svg" alt="" />
+                        </figure>
+                        <h5 class="heading-h5">Professional Chefs</h5>
+                        <h3>420</h3>
+                    </div>
+                    <div class="client-box">
+                        <figure>
+                            <img src="./icons/soda_burger.svg" alt="" />
+                        </figure>
+                        <h5 class="heading-h5">Items Of Food</h5>
+                        <h3>320</h3>
+                    </div>
+                    <div class="client-box">
+                        <figure>
+                            <img src="./icons/spoon.svg" alt="" />
+                        </figure>
+                        <h5 class="heading-h5">Years Of Experienced</h5>
+                        <h3>30+</h3>
+                    </div>
+                    <div class="client-box">
+                        <figure>
+                            <img src="./icons/spoon.svg" alt="" />
+                        </figure>
+                        <h5 class="heading-h5">Happy Customers</h5>
+                        <h3>220</h3>
+                    </div>
+                </div>
+            </section>
 
-            <div class="food-img-box">
-                <a class="food-item" href="#">
-                    <img src="./images/food-img1.jpg" alt="delicius food" />
-                    <span class="food-text-box">
-                        <p>Save 30%</p>
-                        <h6>Fast Food Dish</h6>
-                    </span>
-                </a>
-                <a class="food-item" href="#">
-                    <img src="./images/food-img2.jpg" alt="delicius food" />
-                </a>
-                <a class="food-item" href="#">
-                    <img src="./images/food-img3.jpg" alt="delicius food" />
-                </a>
-                <a class="food-item" href="#">
-                    <img src="./images/food-img4.jpg" alt="delicius food" />
-                </a>
-            </div>
-        </div>
-    </section>
+            <!-- Food Menu -->
+            <section class="food-menu-section container" id="food-menu">
+                <span class="subheading">Choose & pick</span>
 
-    <!-- Why us -->
-    <section class="why-us-section container">
-        <div class="why-us-image-box">
-            <div class="div1 masonry-box1">
-                <figure class="img1">
-                    <img src="./images/masonry-img1.jpg" alt="delicius food" />
-                </figure>
-                <figure class="img2">
-                    <img src="./images/masonry-img2.jpg" alt="delicius food" />
-                </figure>
-            </div>
-            <div class="masonry-box2">
-                <figure class="img3">
-                    <img src="./images/masonry-img3.jpg" alt="delicius food" />
-                </figure>
-                <figure class="img4">
-                    <img src="./images/masonry-img4.jpg" alt="delicius food" />
-                </figure>
-                <figure class="img5">
-                    <img src="./images/masonry-img5.jpg" alt="delicius food" />
-                    <img src="./images/masonry-img6.jpg" alt="delicius food" />
-                </figure>
-            </div>
-        </div>
-        <div class="why-us-content">
-            <span class="subheading">Why Choose us</span>
+                <h2 class="heading-secondary"><span>Fr</span>om Our Menu</h2>
 
-            <h2 class="heading-secondary">
-                <span>Ex</span>tra ordinary taste And Experienced
-            </h2>
+                <ul class="food-menu-list">
+                    <li><a href="#breakfast" class="link">Breakfast</a></li>
+                    <li><a href="#lunch" class="link">Lunch</a></li>
+                    <li><a href="#" class="link">Dinner</a></li>
+                    <li><a href="#" class="link">Dessert</a></li>
+                    <li><a href="#" class="link">Drink</a></li>
+                    <li><a href="#" class="link">Snack</a></li>
+                    <li><a href="#" class="link">Soups</a></li>
+                </ul>
 
-            <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque diam pellentesque bibendum non dui volutpat
-                fringilla bibendum. Urna, elit augue urna, vitae feugiat
-                pretium donec id elementum. Ultrices mattis sed vitae mus
-                risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
-            </p>
-
-            <div>
-                <figure>
-                    <span>
-                        <img src="./icons/hamburger.svg" alt="" />
-                    </span>
-                    <figcaption>Fast Food</figcaption>
-                </figure>
-                <figure>
-                    <span><img src="./icons/cookie.svg" alt="" /></span>
-                    <figcaption>Lunch</figcaption>
-                </figure>
-                <figure>
-                    <span><img src="./icons/hamburger.svg" alt="" /></span>
-                    <figcaption>Dinner</figcaption>
-                </figure>
-            </div>
-
-            <div class="experience">
-                <h2 class="heading-secondary"><span>30+</span></h2>
-                <p>
-                    Years of <br />
-                    <span>Experienced</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Section -->
-    <section class="client-section">
-        <div class="client-content container">
-            <div class="client-box">
-                <figure>
-                    <img src="./icons/chef.svg" alt="" />
-                </figure>
-                <h5 class="heading-h5">Professional Chefs</h5>
-                <h3>420</h3>
-            </div>
-            <div class="client-box">
-                <figure>
-                    <img src="./icons/soda_burger.svg" alt="" />
-                </figure>
-                <h5 class="heading-h5">Items Of Food</h5>
-                <h3>320</h3>
-            </div>
-            <div class="client-box">
-                <figure>
-                    <img src="./icons/spoon.svg" alt="" />
-                </figure>
-                <h5 class="heading-h5">Years Of Experienced</h5>
-                <h3>30+</h3>
-            </div>
-            <div class="client-box">
-                <figure>
-                    <img src="./icons/spoon.svg" alt="" />
-                </figure>
-                <h5 class="heading-h5">Happy Customers</h5>
-                <h3>220</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Food Menu -->
-    <section class="food-menu-section container" id="food-menu">
-        <span class="subheading">Choose & pick</span>
-
-        <h2 class="heading-secondary"><span>Fr</span>om Our Menu</h2>
-
-        <ul class="food-menu-list">
-            <li><a href="#breakfast" class="link">Breakfast</a></li>
-            <li><a href="#lunch" class="link">Lunch</a></li>
-            <li><a href="#" class="link">Dinner</a></li>
-            <li><a href="#" class="link">Dessert</a></li>
-            <li><a href="#" class="link">Drink</a></li>
-            <li><a href="#" class="link">Snack</a></li>
-            <li><a href="#" class="link">Soups</a></li>
-        </ul>
-
-        <div class="food-menu-content breakfast" id="breakfast">
-            <figure>
-                <img src="./images/food-menu-cover.png" alt="delicius food" />
-            </figure>
-            <ul class="food-list">
-                <li>
+                <div class="food-menu-content breakfast" id="breakfast">
                     <figure>
-                        <img src="./images/food-menu-img1.jpg" alt="delicius food" />
+                        <img
+                            src="./images/food-menu-cover.png"
+                            alt="delicius food"
+                        />
                     </figure>
-                    <span>
-                        <h6>Lettuce Leaf</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">12.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img2.jpg" alt="delicius food" />
+                    <ul class="food-list">
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img1.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Lettuce Leaf</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">12.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img2.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Fresh Breakfast</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">14.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img3.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Mild Butter</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p>12.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img4.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Fresh Bread</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">13.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img5.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Glow Cheese</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">13.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img6.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Italian Pizza</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">12.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img7.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Sllice Beef</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">14.5$</p>
+                            </span>
+                        </li>
+                        <li>
+                            <figure>
+                                <img
+                                    src="./images/food-menu-img8.jpg"
+                                    alt="delicius food"
+                                />
+                            </figure>
+                            <span>
+                                <h6>Mushaom Pizza</h6>
+                                <p>
+                                    Lacus nisi, et ac dapibus velit in
+                                    consequat.
+                                </p>
+                                <p class="food-price">14.5$</p>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Chefs -->
+            <section class="chef-section">
+                <span class="subheading">Chefs</span>
+
+                <h2 class="heading-secondary"><span>Me</span>et Our Chef</h2>
+                <div class="chefs container">
+                    <figure class="chef-card">
+                        <img src="./images/chef-img1.jpg" alt="chef image" />
+                        <figcaption>
+                            <h6 class="chef-name">D.Estwood</h6>
+                            <p>Chief Chef</p>
+                        </figcaption>
                     </figure>
-                    <span>
-                        <h6>Fresh Breakfast</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">14.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img3.jpg" alt="delicius food" />
+                    <figure class="chef-card">
+                        <img src="./images/chef-img2.jpg" alt="chef image" />
+                        <figcaption>
+                            <h6 class="chef-name">D.Estwood</h6>
+                            <p>Chief Chef</p>
+                        </figcaption>
                     </figure>
-                    <span>
-                        <h6>Mild Butter</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p>12.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img4.jpg" alt="delicius food" />
+                    <figure class="chef-card">
+                        <img src="./images/chef-img3.jpg" alt="chef image" />
+                        <figcaption>
+                            <h6 class="chef-name">D.Estwood</h6>
+                            <p>Chief Chef</p>
+                        </figcaption>
                     </figure>
-                    <span>
-                        <h6>Fresh Bread</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">13.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img5.jpg" alt="delicius food" />
+                    <figure class="chef-card">
+                        <img src="./images/chef-img4.jpg" alt="chef image" />
+                        <figcaption>
+                            <h6 class="chef-name">D.Estwood</h6>
+                            <p>Chief Chef</p>
+                        </figcaption>
                     </figure>
-                    <span>
-                        <h6>Glow Cheese</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">13.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img6.jpg" alt="delicius food" />
-                    </figure>
-                    <span>
-                        <h6>Italian Pizza</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">12.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img7.jpg" alt="delicius food" />
-                    </figure>
-                    <span>
-                        <h6>Sllice Beef</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">14.5$</p>
-                    </span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./images/food-menu-img8.jpg" alt="delicius food" />
-                    </figure>
-                    <span>
-                        <h6>Mushaom Pizza</h6>
-                        <p>Lacus nisi, et ac dapibus velit in consequat.</p>
-                        <p class="food-price">14.5$</p>
-                    </span>
-                </li>
-            </ul>
-        </div>
-    </section>
+                </div>
+                <a class="btn btn_outline" href="#">See More</a>
+            </section>
 
-    <!-- Chefs -->
-    <section class="chef-section">
-        <span class="subheading">Chefs</span>
-
-        <h2 class="heading-secondary"><span>Me</span>et Our Chef</h2>
-        <div class="chefs container">
-            <figure class="chef-card">
-                <img src="./images/chef-img1.jpg" alt="chef image" />
-                <figcaption>
-                    <h6 class="chef-name">D.Estwood</h6>
-                    <p>Chief Chef</p>
-                </figcaption>
-            </figure>
-            <figure class="chef-card">
-                <img src="./images/chef-img2.jpg" alt="chef image" />
-                <figcaption>
-                    <h6 class="chef-name">D.Estwood</h6>
-                    <p>Chief Chef</p>
-                </figcaption>
-            </figure>
-            <figure class="chef-card">
-                <img src="./images/chef-img3.jpg" alt="chef image" />
-                <figcaption>
-                    <h6 class="chef-name">D.Estwood</h6>
-                    <p>Chief Chef</p>
-                </figcaption>
-            </figure>
-            <figure class="chef-card">
-                <img src="./images/chef-img4.jpg" alt="chef image" />
-                <figcaption>
-                    <h6 class="chef-name">D.Estwood</h6>
-                    <p>Chief Chef</p>
-                </figcaption>
-            </figure>
-        </div>
-        <a class="btn btn_outline" href="#">See More</a>
-    </section>
-
-    <!-- Testimonials Section-->
-    <section class="testimonials-section container">
-        <span class="subheading">Testimonials</span>
-
-        <h2 class="heading-secondary">
-            <span>Wh</span>at our client are saying
-        </h2>
-
-        <div class="testimonials-card" id="slider1">
-            <figure class="user-img">
-                <img src="./images/user-img.png" alt="user" />
-            </figure>
-
-            <span class="quote"><img src="./icons/quotes.svg" alt="" /></span>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quisque diam pellentesque bibendum non dui volutpat
-                fringilla bibendum. Urna, elit augue urna, vitae feugiat
-                pretium donec id elementum. Ultrices mattis sed vitae mus
-                risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
-            </p>
-
-            <span class="stars">
-                <img src="./icons/stars.svg" alt="stars" />
-            </span>
-
-            <h5 class="heading-h5">Alamin Hasan</h5>
-
-            <p class="description">Food Specialist</p>
-        </div>
-
-        <div class="btn-qroup">
-            <button class="btn-indicator active"></button>
-            <button class="btn-indicator"></button>
-            <button class="btn-indicator"></button>
-            <button class="btn-indicator"></button>
-        </div>
-    </section>
-
-    <!-- Restaurant active process -->
-    <section class="restaurant-process-section" id="pages">
-        <div class="process container">
-            <div class="process-content">
-                <span class="subheading">Restaurant Active Process</span>
+            <!-- Testimonials Section-->
+            <section class="testimonials-section container">
+                <span class="subheading">Testimonials</span>
 
                 <h2 class="heading-secondary">
-                    <span>We</span> Document Every Food Bean Process untile
-                    it is saved
+                    <span>Wh</span>at our client are saying
                 </h2>
 
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quisque diam pellentesque bibendum non dui volutpat
-                    fringilla bibendum. Urna, elit augue urna...
-                </p>
-                <div class="btn-group">
-                    <a class="btn btn_outline" href="#">Read More</a>
-                    <a class="btn btn_full" href="#">
-                        <img src="./icons/play.svg" alt="" />
-                    </a>
-                    <p>Play Video</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section class="blog container" id="blog">
-        <span class="subheading">Blog Post</span>
-
-        <h2 class="heading-secondary"><span>La</span>test News & Blog</h2>
-
-        <div class="blog-content">
-            <div class="blog-card">
-                <figure>
-                    <img src="./images/food-img2.jpg" alt="delicius food" />
-                </figure>
-                <div class="blog-text-box">
-                    <p>10 February 2022</p>
-                    <h5 class="heading-h5">
-                        Pellentesque Non Efficitur Mi Aliquam Convallis Mi
-                        Quis
-                    </h5>
-                    <div class="blog-action">
-                        <a class="link" href="#">Learn More</a>
-                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
-                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
-                        <a class="link" href="#">
-                            <img src="./icons/shareNetwork.svg" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-card">
-                <figure>
-                    <img src="./images/masonry-img1.jpg" alt="delicius food" />
-                </figure>
-                <div class="blog-text-box">
-                    <p>10 February 2022</p>
-                    <h5 class="heading-h5">
-                        Consectetur adipisicing elit rerum, dolorem est et
-                        sit.
-                    </h5>
-                    <div class="blog-action">
-                        <a class="link" href="#">Learn More</a>
-                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
-                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
-                        <a class="link" href="#">
-                            <img src="./icons/shareNetwork.svg" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-card">
-                <figure>
-                    <img src="./images/food-img4.jpg" alt="delicius food" />
-                </figure>
-                <div class="blog-text-box">
-                    <p>10 February 2022</p>
-                    <h5 class="heading-h5">
-                        Lorem ipsum, dolor amet consectetur expedita?
-                    </h5>
-                    <div class="blog-action">
-                        <a class="link" href="#">Learn More</a>
-                        <a class="link" href="#"><img src="./icons/thumbsUp.svg" alt="" /></a>
-                        <a class="link" href="#"><img src="./icons/chatDots.svg" alt="" /></a>
-                        <a class="link" href="#">
-                            <img src="./icons/shareNetwork.svg" alt="" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="blog-notification">
-            <div class="notification-heading">
-                <h4 class="heading-secondary">
-                    <span>St</span>ill You Need Our Support ?
-                </h4>
-                <p>
-                    Don’t wait make a smart & logical quote here. Its pretty
-                    easy.
-                </p>
-            </div>
-
-            <form>
-                <input type="email" id="email" placeholder="Enter Your Email" />
-                <button type="submit" class="notification-btn">
-                    Subscribe Now
-                </button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="footer-section">
-        <div class="footer container">
-            <div class="footer-about">
-                <h5 class="heading-h5">About Us.</h5>
-                <p>
-                    Corporate clients and leisure travelers has been relying
-                    on Groundlink for dependab safe, and professional
-                    chauffeured car service in major cities across World.
-                </p>
-                <div class="about-info">
-                    <figure>
-                        <img src="./icons/clockClockwise.svg" alt="" />
+                <div class="testimonials-card" id="slider1">
+                    <figure class="user-img">
+                        <img src="./images/user-img.png" alt="user" />
                     </figure>
-                    <div class="about-info-text-box">
-                        <p>Opening Hours</p>
-                        <p>Mon - Sat(8.00 - 6.00)</p>
-                        <p>Sunday - Closed</p>
+
+                    <span class="quote"
+                        ><img src="./icons/quotes.svg" alt=""
+                    /></span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Quisque diam pellentesque bibendum non dui volutpat
+                        fringilla bibendum. Urna, elit augue urna, vitae feugiat
+                        pretium donec id elementum. Ultrices mattis sed vitae
+                        mus risus. Lacus nisi, et ac dapibus sit eu velit in
+                        consequat.
+                    </p>
+
+                    <span class="stars">
+                        <img src="./icons/stars.svg" alt="stars" />
+                    </span>
+
+                    <h5 class="heading-h5">Alamin Hasan</h5>
+
+                    <p class="description">Food Specialist</p>
+                </div>
+
+                <div class="btn-qroup">
+                    <button class="btn-indicator active"></button>
+                    <button class="btn-indicator"></button>
+                    <button class="btn-indicator"></button>
+                    <button class="btn-indicator"></button>
+                </div>
+            </section>
+
+            <!-- Restaurant active process -->
+            <section class="restaurant-process-section" id="pages">
+                <div class="process container">
+                    <div class="process-content">
+                        <span class="subheading"
+                            >Restaurant Active Process</span
+                        >
+
+                        <h2 class="heading-secondary">
+                            <span>We</span> Document Every Food Bean Process
+                            untile it is saved
+                        </h2>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Quisque diam pellentesque bibendum non dui
+                            volutpat fringilla bibendum. Urna, elit augue
+                            urna...
+                        </p>
+                        <div class="btn-group">
+                            <a class="btn btn_outline" href="#">Read More</a>
+                            <a class="btn btn_full" href="#">
+                                <img src="./icons/play.svg" alt="" />
+                            </a>
+                            <p>Play Video</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="useful-links">
-                <h5 class="heading-h5">Useful Links</h5>
-                <ul>
-                    <li><a class="link" href="#">About</a></li>
-                    <li><a class="link" href="#">News</a></li>
-                    <li><a class="link" href="#">Partners</a></li>
-                    <li><a class="link" href="#">Team</a></li>
-                    <li><a class="link" href="#">Menu</a></li>
-                    <li><a class="link" href="#">Contacts</a></li>
-                </ul>
-            </div>
-            <div class="help">
-                <h5 class="heading-h5">Help?</h5>
-                <ul>
-                    <li><a class="link" href="#">FAQ</a></li>
-                    <li><a class="link" href="#">Term & conditions</a></li>
-                    <li><a class="link" href="#">Reporting</a></li>
-                    <li><a class="link" href="#">Documentation</a></li>
-                    <li><a class="link" href="#">Support Policy</a></li>
-                    <li><a class="link" href="#">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="recent-post">
-                <h5 class="heading-h5">Recent Post</h5>
-                <ul>
-                    <li>
-                        <a class="link" href="#">
-                            <figure>
-                                <img src="./images/masonry-img3.jpg" alt="" />
-                            </figure>
-                            <div class="recent-text-box">
-                                <p>20 Feb 2022</p>
-                                <p>Keep Your Business</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">
-                            <figure>
-                                <img src="./images/food-menu-img6.jpg" alt="" />
-                            </figure>
-                            <div class="recent-text-box">
-                                <p>20 Feb 2022</p>
-                                <p>Keep Your Business</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">
-                            <figure>
-                                <img src="./images/food-img3.jpg" alt="" />
-                            </figure>
-                            <div class="recent-text-box">
-                                <p>20 Feb 2022</p>
-                                <p>Keep Your Business</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="copyright-text-box container">
-                <p>
-                    Copyright © 2022
-                    <a class="link copyright-link" href="https://www.figma.com/community/file/1169920613484168416">figma design by
-                        Ayeman.</a> <a class="link copyright-link" href="https://github.com/shd-mn">Coding by
-                            Shadman.</a>
-                    All Rights Reserved.
-                </p>
-                <ul class="social-link">
-                    <li>
-                        <a href="#" class="link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="link">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</body>
+            </section>
 
-</html> 
+            <!-- Blog -->
+            <section class="blog container" id="blog">
+                <span class="subheading">Blog Post</span>
+
+                <h2 class="heading-secondary">
+                    <span>La</span>test News & Blog
+                </h2>
+
+                <div class="blog-content">
+                    <div class="blog-card">
+                        <figure>
+                            <img
+                                src="./images/food-img2.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <div class="blog-text-box">
+                            <p>10 February 2022</p>
+                            <h5 class="heading-h5">
+                                Pellentesque Non Efficitur Mi Aliquam Convallis
+                                Mi Quis
+                            </h5>
+                            <div class="blog-action">
+                                <a class="link" href="#">Learn More</a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/thumbsUp.svg" alt=""
+                                /></a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/chatDots.svg" alt=""
+                                /></a>
+                                <a class="link" href="#">
+                                    <img src="./icons/shareNetwork.svg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <figure>
+                            <img
+                                src="./images/masonry-img1.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <div class="blog-text-box">
+                            <p>10 February 2022</p>
+                            <h5 class="heading-h5">
+                                Consectetur adipisicing elit rerum, dolorem est
+                                et sit.
+                            </h5>
+                            <div class="blog-action">
+                                <a class="link" href="#">Learn More</a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/thumbsUp.svg" alt=""
+                                /></a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/chatDots.svg" alt=""
+                                /></a>
+                                <a class="link" href="#">
+                                    <img src="./icons/shareNetwork.svg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <figure>
+                            <img
+                                src="./images/food-img4.jpg"
+                                alt="delicius food"
+                            />
+                        </figure>
+                        <div class="blog-text-box">
+                            <p>10 February 2022</p>
+                            <h5 class="heading-h5">
+                                Lorem ipsum, dolor amet consectetur expedita?
+                            </h5>
+                            <div class="blog-action">
+                                <a class="link" href="#">Learn More</a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/thumbsUp.svg" alt=""
+                                /></a>
+                                <a class="link" href="#"
+                                    ><img src="./icons/chatDots.svg" alt=""
+                                /></a>
+                                <a class="link" href="#">
+                                    <img src="./icons/shareNetwork.svg" alt=""
+                                /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-notification">
+                    <div class="notification-heading">
+                        <h4 class="heading-secondary">
+                            <span>St</span>ill You Need Our Support ?
+                        </h4>
+                        <p>
+                            Don't wait make a smart & logical quote here. Its
+                            pretty easy.
+                        </p>
+                    </div>
+
+                    <form>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter Your Email"
+                        />
+                        <button type="submit" class="notification-btn">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+
+        <footer class="footer-section" id="footer">
+            <div class="footer container">
+                <div class="footer-about">
+                    <h5 class="heading-h5">About Us.</h5>
+                    <p>
+                        Corporate clients and leisure travelers has been relying
+                        on Groundlink for dependab safe, and professional
+                        chauffeured car service in major cities across World.
+                    </p>
+                    <div class="about-info">
+                        <figure>
+                            <img src="./icons/clockClockwise.svg" alt="" />
+                        </figure>
+                        <div class="about-info-text-box">
+                            <p>Opening Hours</p>
+                            <p>Mon - Sat(8.00 - 6.00)</p>
+                            <p>Sunday - Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="useful-links">
+                    <h5 class="heading-h5">Useful Links</h5>
+                    <ul>
+                        <li><a class="link" href="#">About</a></li>
+                        <li><a class="link" href="#">News</a></li>
+                        <li><a class="link" href="#">Partners</a></li>
+                        <li><a class="link" href="#">Team</a></li>
+                        <li><a class="link" href="#">Menu</a></li>
+                        <li><a class="link" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <h5 class="heading-h5">Help?</h5>
+                    <ul>
+                        <li><a class="link" href="#">FAQ</a></li>
+                        <li><a class="link" href="#">Term & conditions</a></li>
+                        <li><a class="link" href="#">Reporting</a></li>
+                        <li><a class="link" href="#">Documentation</a></li>
+                        <li><a class="link" href="#">Support Policy</a></li>
+                        <li><a class="link" href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="recent-post">
+                    <h5 class="heading-h5">Recent Post</h5>
+                    <ul>
+                        <li>
+                            <a class="link" href="#">
+                                <figure>
+                                    <img
+                                        src="./images/masonry-img3.jpg"
+                                        alt=""
+                                    />
+                                </figure>
+                                <div class="recent-text-box">
+                                    <p>20 Feb 2022</p>
+                                    <p>Keep Your Business</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">
+                                <figure>
+                                    <img
+                                        src="./images/food-menu-img6.jpg"
+                                        alt=""
+                                    />
+                                </figure>
+                                <div class="recent-text-box">
+                                    <p>20 Feb 2022</p>
+                                    <p>Keep Your Business</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">
+                                <figure>
+                                    <img src="./images/food-img3.jpg" alt="" />
+                                </figure>
+                                <div class="recent-text-box">
+                                    <p>20 Feb 2022</p>
+                                    <p>Keep Your Business</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright-text-box container">
+                    <p>
+                        Copyright © 2022
+                        <a
+                            class="link copyright-link"
+                            href="https://www.figma.com/community/file/1169920613484168416"
+                            >figma design by Ayeman.</a
+                        >
+                        <a
+                            class="link copyright-link"
+                            href="https://github.com/shd-mn"
+                            >Coding by Shadman.</a
+                        >
+                        All Rights Reserved.
+                    </p>
+                    <ul class="social-link">
+                        <li>
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
