@@ -1,0 +1,14 @@
+@media (max-width: 83em) {
+  .social-links {
+    display: none;
+  }
+  .food-img-box {
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 9px;
+  }
+}/*# sourceMappingURL=media.css.map */
