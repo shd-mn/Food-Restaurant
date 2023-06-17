@@ -27,7 +27,8 @@ $primary-clr-7: #cc7f0a;
 $primary-clr-8: #b36f09;
 $primary-clr-9: #995f08;
 $primary-clr-10: #805007;
-$primary-color-filter: invert(53%) sepia(90%) saturate(456%) hue-rotate(354deg) brightness(106%) contrast(104%);
+$primary-color-filter: invert(53%) sepia(90%) saturate(456%) hue-rotate(354deg)
+    brightness(106%) contrast(104%);
 $secondary-color: #999966;
 
 /* ===================================
@@ -51,7 +52,6 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
-    background-color: aqua;
 
     &::-webkit-scrollbar {
         width: 1rem;
@@ -68,6 +68,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
     line-height: 1;
     font-weight: 400;
     color: $white;
@@ -101,7 +102,6 @@ body {
 a {
     color: $white;
 }
-
 
 button {
     border: none;
@@ -146,15 +146,10 @@ button {
     padding: 1rem;
 }
 
-
-
 .link:hover,
 .link:active {
     color: $primary-clr-5;
 }
-
-
-
 
 ul {
     list-style: none;
