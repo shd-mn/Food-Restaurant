@@ -38,6 +38,13 @@
   .blog-notification {
     width: 100%;
   }
+  .food-menu-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .food-menu-content .food-list {
+    grid-template-columns: 1fr;
+  }
   .chefs {
     display: grid;
     grid-template-columns: 1fr 1fr;
