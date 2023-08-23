@@ -38,6 +38,10 @@
   .blog-notification {
     width: 100%;
   }
+  .chefs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media (max-width: 48em) {
   html {
@@ -62,5 +66,9 @@
   }
   .recent-post {
     display: none;
+  }
+  .chefs {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=media.css.map */

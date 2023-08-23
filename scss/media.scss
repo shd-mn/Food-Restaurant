@@ -51,6 +51,11 @@
     .blog-notification {
         width: 100%;
     }
+
+    .chefs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 // max-width: 768px;
@@ -82,5 +87,10 @@
     }
     .recent-post {
         display: none;
+    }
+
+    .chefs {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
